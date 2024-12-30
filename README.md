@@ -32,7 +32,7 @@ Todas as consultas SQL usadas para criar os relatórios estão no arquivo `Aula_
 Para realizar as consultas SQL construídas nesse projeto, podemos seguir uma das duas opções descritas a seguir:
 
 - Instalação manual do servidor PostgreSQL no computador que deseja realizar as consultas e criação do schema com a base de dados Northwind. 
-    - ![Instalador do servidor PostgreSQL e demais ferramentas auxiliares](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads): Versão usada neste projeto --> `16.6 Windows x86-64` 
+    - [Instalador do servidor PostgreSQL e demais ferramentas auxiliares](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads): Versão usada neste projeto --> `16.6 Windows x86-64` 
 
 
 
