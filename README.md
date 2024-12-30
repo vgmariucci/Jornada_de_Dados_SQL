@@ -58,4 +58,4 @@ Para realizar as consultas SQL construídas nesse projeto, podemos seguir uma da
 
     8. Para verificar se o processo com Docker funcionou corretamente, podemos abrir um navegador e tentar acessar o endereço local: [http://localhost:5050](http://localhost:5050). Use a senha `adimin123`. A página que irá carregar deve ser igual ou parecida com o print abaixo:
 
-    ![pgAdmin]((https://github.com/vgmariucci/Jornada_de_Dados_SQL/blob/main/imagens/localhost_pgadmin5050.png?raw=true))
+    ![pgAdmin](https://github.com/vgmariucci/Jornada_de_Dados_SQL/blob/main/imagens/localhost_pgadmin5050.png?raw=true)
