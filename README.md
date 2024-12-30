@@ -50,11 +50,11 @@ Para realizar as consultas SQL construídas nesse projeto, podemos seguir uma da
 
     5. Aguarde enquanto a imagem do servidor PostgreSQL é baixada do Docker Hub.
 
-    6. Abra o Docker Desktop e certifique-se de que os containers descritos no arquivo docker-compose.yml estão ativos. Uma alternativa rápida para verificar/listar os containers ativos é digitar no terminar o seguinte: `docker -ps`. Uma lista com os containeres ativos será apresentada como mostra a imagem abaixo:
+    6. Abra o Docker Desktop e certifique-se de que os containers descritos no arquivo docker-compose.yml estão ativos. Uma alternativa rápida para verificar/listar os containers ativos é digitar no terminar o seguinte: `docker -ps`. Uma lista com os containers ativos será apresentada como mostra a imagem abaixo:
 
     ![docker_ps](https://github.com/vgmariucci/Jornada_de_Dados_SQL/blob/main/imagens/docker_ps.png?raw=true)
 
-    7. No processo de criação das imagens e ativação dos containeres é passada a instrução no arquivo docker-compose.yml para que seja criado o schema com a base de dados Northwind via arquivo `northwind.sql` (adicionada neste repositório por conveniência).
+    7. No processo de criação das imagens e ativação dos containers é passada a instrução no arquivo docker-compose.yml para que seja criado o schema com a base de dados Northwind via arquivo `northwind.sql` (adicionada neste repositório por conveniência).
 
     8. Para verificar se o processo com Docker funcionou corretamente, podemos abrir um navegador e tentar acessar o endereço local: [http://localhost:5050](http://localhost:5050). Use a senha `adimin123`. A página que irá carregar deve ser igual ou parecida com o print abaixo:
 
