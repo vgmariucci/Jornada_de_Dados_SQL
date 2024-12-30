@@ -31,8 +31,15 @@ Todas as consultas SQL usadas para criar os relatórios estão no arquivo `Aula_
 
 Para realizar as consultas SQL construídas nesse projeto, podemos seguir uma das duas opções descritas a seguir:
 
-- Instalação manual do servidor PostgreSQL no computador que deseja realizar as consultas e criação do schema com a base de dados Northwind. 
+1. Instalação manual do servidor PostgreSQL no computador que deseja realizar as consultas e criação do schema com a base de dados Northwind. 
     - [Instalador do servidor PostgreSQL e demais ferramentas auxiliares](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads): Versão usada neste projeto --> `16.6 Windows x86-64` 
+    - [Arquivo SQL para criar as tabelas da base de dados Northwind após instalação do servidor PostgreSQL](https://github.com/microsoft/sql-server-samples/blob/master/samples/databases/northwind-pubs/instnwnd.sql)
 
+2. Usar Docker
+    - Para configurar uma imagem do servidor PostgreSQL e executar um container de modo que seja possível visualizar as consultas SQL diretamente do navegador, usando o pgadmin.
+
+    ## Passo a passo do processo usando o Docker
+
+    1. 
 
 
