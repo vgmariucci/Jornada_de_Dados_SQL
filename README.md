@@ -1,11 +1,11 @@
 # Desenvolvimento do Projeto Final Referente às Aulas iniciais de SQL e PostgreSQL
 
 ## Objetivo
-Aplicar os conhecimentos aprendidos durantes as aulas 1 a 4 para criar consultas em SQL usando a base de dados Northwind. As consultas visam criar relatórios geralmente solicitados no ambiente corporativo cujas regras de negócio se asemelham  à base de dados Northwind.
+Aplicar os conhecimentos adquiridos durantes as aulas 1 a 4 para criar consultas em SQL usando a base de dados Northwind. As consultas irão gerar relatórios geralmente solicitados no ambiente corporativo, cujas regras de negócio se assemelham  à base de dados Northwind.
 
 ### Relatórios criados no Projeto Final da Aula 5:
 
-- Relatório de Receita
+- Relatório de Receita/Faturamento total
 - Análise de crescimento mensal e cálculo YTD
 - Segmentação de clientes:
     - Qual o valor total que cada cliente pagou até agora?
@@ -23,6 +23,16 @@ A base de dados Northwind é composta por 14 tabelas, em que, os relacionamentos
 
 ![northwind](https://github.com/vgmariucci/Jornada_de_Dados_SQL/blob/main/imagens/northwind-er-diagram.png?raw=true)
 
+### Nota: 
+
+Todas as consultas SQL usadas para criar os relatórios estão no arquivo `Aula_05_projeto_final.sql`
+
+## Como testar as consultas SQL e visualizar os relatórios usando a base de dados `Northwind`?
+
+Para realizar as consultas SQL construídas nesse projeto, podemos seguir uma das duas opções descritas a seguir:
+
+- Instalação manual do servidor PostgreSQL no computador que deseja realizar as consultas e criação do schema com a base de dados Northwind. 
+    - ![Instalador do servidor PostgreSQL e demais ferramentas auxiliares](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads): Versão usada neste projeto --> `16.6 Windows x86-64` 
 
 
 
