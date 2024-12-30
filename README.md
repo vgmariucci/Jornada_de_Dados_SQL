@@ -40,6 +40,12 @@ Para realizar as consultas SQL construídas nesse projeto, podemos seguir uma da
 
     ## Passo a passo do processo usando o Docker
 
-    1. 
+    1. [Baixar e Instalar o Docker](https://docs.docker.com/desktop/setup/install/windows-install/): Neste projeto foi usado a versão para Windows.
+
+    2. Após a instalação do Docker Desktop, baixe o arquivo `docker-compose.yml` em um diretório de preferência (por exemplo a própria pasta de downloads ou o desktop do computador).
+
+    3. Abra o terminal ou prompt de comando e acesse o caminho do arquivo `docker-compose.yml` baixado.
+
+    4. Execute o comando `docker-compose up`
 
 
