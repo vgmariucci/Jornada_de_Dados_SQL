@@ -56,6 +56,12 @@ Para realizar as consultas SQL construídas nesse projeto, podemos seguir uma da
 
     7. No processo de criação das imagens e ativação dos containers é passada a instrução no arquivo docker-compose.yml para que seja criado o schema com a base de dados Northwind via arquivo `northwind.sql` (adicionada neste repositório por conveniência).
 
-    8. Para verificar se o processo com Docker funcionou corretamente, podemos abrir um navegador e tentar acessar o endereço local: [http://localhost:5050](http://localhost:5050). Use a senha `adimin123`. A página que irá carregar deve ser igual ou parecida com o print abaixo:
+    8. Para verificar se o processo com Docker funcionou corretamente, podemos abrir um navegador e tentar acessar o endereço local:
+    - [http://localhost:5050](http://localhost:5050). 
+    - Use a senha: `admin123`. 
+    
+    A página que irá carregar deve ser igual ou parecida com o print abaixo:
 
     ![pgAdmin](https://github.com/vgmariucci/Jornada_de_Dados_SQL/blob/main/imagens/localhost_pgadmin5050.png?raw=true)
+
+    
