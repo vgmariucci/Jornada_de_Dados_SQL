@@ -21,7 +21,7 @@ A base de dados Northwind é resultado de um sistema ERP (Enterprise Resources P
 
 A base de dados Northwind é composta por 14 tabelas, em que, os relacionamentos entre as tabelas podem ser visualizados no diagrama de relacionamento de entidades a seguir:
 
-![northwind](https://github.com/vgmariucci/Jornada_de_Dados_SQL/imagens/northwind-er-diagram.png?raw=true)
+![northwind](https://github.com/vgmariucci/Jornada_de_Dados_SQL/blob/main/imagens/northwind-er-diagram.png?raw=true)
 
 
 
