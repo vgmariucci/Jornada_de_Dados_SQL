@@ -42,7 +42,7 @@ Para realizar as consultas SQL construídas nesse projeto, podemos seguir uma da
 
     1. [Baixar e Instalar o Docker](https://docs.docker.com/desktop/setup/install/windows-install/): Neste projeto foi usada a versão para Windows.
 
-    2. Após a instalação do Docker Desktop, baixe o arquivo `docker-compose.yml` desse repositório ou o próprio repositório (com git clone) em um diretório de preferência (por exemplo a própria pasta de downloads ou o desktop do computador).
+    2. Após a instalação do Docker Desktop, baixe o arquivo `docker-compose.yml` desse repositório ou o próprio repositório (com git clone) em um diretório de preferência (por exemplo, a própria pasta de downloads ou o desktop do computador).
 
     3. Abra o terminal ou prompt de comando e acesse o caminho do arquivo `docker-compose.yml` baixado.
 
@@ -50,4 +50,6 @@ Para realizar as consultas SQL construídas nesse projeto, podemos seguir uma da
 
     5. Aguarde enquanto a imagem do servidor PostgreSQL é baixada do Docker Hub.
 
-    6. 
+    6. Abra o Docker Desktop e certifique-se de que os containers descritos no arquivo docker-compose.yml estão ativos. Uma alternativa rápida para verificar/listar os containers ativos é digitar no terminar o seguinte: `docker -ps`. Uma lista com os containeres ativos será apresentada como mostra a imagem abaixo:
+
+    ![docker_ps](https://github.com/vgmariucci/Jornada_de_Dados_SQL/blob/main/imagens/docker_ps.png?raw=true)

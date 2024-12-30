@@ -1,10 +1,10 @@
-version: '3'
+version: '3.8'
 
 services:
-  db:
+
+  postgres_server_db:
+    container_name: postgres_server_db
     image: postgres:16.6
-    container_name: db
-    restart: always
     environment:
       POSTGRES_DB: northwind
       POSTGRES_USER: admin
@@ -15,14 +15,13 @@ services:
       - ./northwind.sql/:/docker-entrypoint-initdb.d/northwind.sql
       - ./files:/files
     ports:
-      - "55432:5432"
+      - 5432:5432
     networks:
-      - db
+      - postgres_server_db
 
-pgadmin:
-    image: dpage/pgadmin4
+  pgadmin:
     container_name: pgadmin
-    restart: always
+    image: dpage/pgadmin4
     environment:
       PGADMIN_DEFAULT_EMAIL: pgadmin4@pgadmin.org
       PGADMIN_DEFAULT_PASSWORD: admin123
@@ -36,10 +35,10 @@ pgadmin:
     ports:
       - 5050:5050
     networks:
-      -db
+      - postgres_server_db
   
 networks:
-  db:
+  postgres_server_db:
     driver: bridge
 
 volumes:
