@@ -85,3 +85,5 @@ Para realizar as consultas SQL construídas nesse projeto, podemos seguir uma da
 
     ![pgAdmin_Northwind_db](https://github.com/vgmariucci/Jornada_de_Dados_SQL/blob/main/imagens/northwind_db_pgadmin.png?raw=true)
 
+    
+
