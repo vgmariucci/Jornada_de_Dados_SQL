@@ -99,4 +99,6 @@ Caso tenha obtido sucesso até aqui com a visualização das tabelas da base do 
 
 ![query_tool_workspace_pgadmin](https://github.com/vgmariucci/Jornada_de_Dados_SQL/blob/main/imagens/query_tool_workspace_pgadmin.png?raw=true)
 
+- Copiar as queries SQL `Ctrl-c`e colar `Ctrl-v` na área em branco da aba `Query`:
 
+![query_tool_workspace_pgadmin](https://github.com/vgmariucci/Jornada_de_Dados_SQL/blob/main/imagens/query_tool_workspace_sql_script_pgadmin.png?raw=true)

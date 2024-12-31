@@ -1,12 +1,12 @@
 -- 1. Total revenues for 1997
--- SELECT 
---     SUM(od.quantity * od.unit_price * (1.0 - od.discount)) AS total_revenues_1997
--- FROM 
---     orders o
--- JOIN 
---     order_details od ON o.order_id = od.order_id
--- WHERE 
---     EXTRACT(YEAR FROM o.order_date) = 1997;
+SELECT 
+    SUM(od.quantity * od.unit_price * (1.0 - od.discount)) AS total_revenues_1997
+FROM 
+    orders o
+JOIN 
+    order_details od ON o.order_id = od.order_id
+WHERE 
+    EXTRACT(YEAR FROM o.order_date) = 1997;
 
 
 -- 2. Monthly growth and YTD values analysis
