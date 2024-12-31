@@ -93,7 +93,7 @@ Para realizar as consultas SQL construídas nesse projeto, podemos seguir uma da
 
 Caso tenha obtido sucesso até aqui com a visualização das tabelas da base do northwind, então basta executar as consultas SQL do arquivo `Relatorios_Northwind.sql`
 
-- Para executar as consultas SQL no pdAdmin usando o navegador, basta clicar com o botão direito do mouse sobre alguma tabela da base northwind e escolher a opção `Query Tool`.
+- Para executar as consultas SQL no pdAdmin usando o navegador, basta clicar com o botão direito do mouse sobre alguma tabela da base northwind e escolher a opção `Query Tool`:
 
 ![query_tool_pgadmin](https://github.com/vgmariucci/Jornada_de_Dados_SQL/blob/main/imagens/query_tool_pgadmin.png?raw=true)
 
