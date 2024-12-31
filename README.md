@@ -77,13 +77,19 @@ Para realizar as consultas SQL construídas nesse projeto, podemos seguir uma da
     - Host name/address: `postgres_server_db`
     - Username: `admin`
     - Password: `admin123`
-    - Clicar em `Salvar`
+    - Clicar em `Save`
     
     ![pgAdmin_Register_Server_Connection](https://github.com/vgmariucci/Jornada_de_Dados_SQL/blob/main/imagens/register_server_connection_pgadmin.png?raw=true)
 
     12. Verificar se o banco de dados `northwind` pode ser selecionado como no print abaixo:
 
-    ![pgAdmin_Northwind_db](https://github.com/vgmariucci/Jornada_de_Dados_SQL/blob/main/imagens/northwind_db_pgadmin.png?raw=true)
+    ![pgAdmin_Northwind_Tables_db](https://github.com/vgmariucci/Jornada_de_Dados_SQL/blob/main/imagens/northwind_schema_and_tables_pgadmin.png?raw=true)
 
-    
+- Nota: Caso a base de dados não esteja aparecendo, tente realizar a interrupção dos serviços em containers usando os comandos no terminal:
+    - `docker-compose down`: Interrompe os containers ativos
+    - `docker-compose down -v`: Remove as imagens criadas a partir do `docker-compose.yml`
+    - Tente repetir o processo desde o `docker-compose up`
+
+Caso tenha obtido sucesso até aqui com a visualização das tabelas da base do northwind, então basta executar as consultas SQL do arquivo `Relatorios_Northwind.sql`
+
 
