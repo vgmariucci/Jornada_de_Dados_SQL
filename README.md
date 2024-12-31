@@ -87,7 +87,8 @@ Para realizar as consultas SQL construídas nesse projeto, podemos seguir uma da
 
 - Nota: Caso a base de dados não esteja aparecendo, tente realizar a interrupção dos serviços em containers usando os comandos no terminal:
     - `docker-compose down`: Interrompe os containers ativos
-    - `docker-compose down -v`: Remove as imagens criadas a partir do `docker-compose.yml`
+    - `docker-compose down -v`: Remove as pastas/volumes criadas a partir do `docker-compose.yml`
+    - Acesse o Docker Desktop e remova os containers e as imagens criadas.
     - Tente repetir o processo desde o `docker-compose up`
 
 Caso tenha obtido sucesso até aqui com a visualização das tabelas da base do northwind, então basta executar as consultas SQL do arquivo `Relatorios_Northwind.sql`
