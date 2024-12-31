@@ -64,4 +64,24 @@ Para realizar as consultas SQL construídas nesse projeto, podemos seguir uma da
 
     ![pgAdmin](https://github.com/vgmariucci/Jornada_de_Dados_SQL/blob/main/imagens/localhost_pgadmin5050.png?raw=true)
 
+    9. Clicar em `Add New Server`:
+
+    ![pgAdmin_Add_New_Server](https://github.com/vgmariucci/Jornada_de_Dados_SQL/blob/main/imagens/Add_New_Server_pgadmin.png?raw=true)
+
+    10. Selecionar a aba `General` e preencher o campo `Name` com `postgres_server_db` (o mesmo nome definido no arquivo `docker-compose.yml`):
+
+    ![pgAdmin_Register_Server_General](https://github.com/vgmariucci/Jornada_de_Dados_SQL/blob/main/imagens/register_server_general_pgadmin.png?raw=true)
+
+    11. Selecionar a aba `Connection` e preencher os campos:
     
+    - Host name/address: `postgres_server_db`
+    - Username: `admin`
+    - Password: `admin123`
+    - Clicar em `Salvar`
+    
+    ![pgAdmin_Register_Server_Connection](https://github.com/vgmariucci/Jornada_de_Dados_SQL/blob/main/imagens/register_server_connection_pgadmin.png?raw=true)
+
+    12. Verificar se o banco de dados `northwind` pode ser selecionado como no print abaixo:
+
+    ![pgAdmin_Northwind_db](https://github.com/vgmariucci/Jornada_de_Dados_SQL/blob/main/imagens/northwind_db_pgadmin.png?raw=true)
+
