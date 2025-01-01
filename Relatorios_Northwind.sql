@@ -72,3 +72,53 @@
 --     customers.company_name
 -- ORDER BY 
 --     total DESC;
+
+-- Separar apenas os clientes que estão no grupo 3, 4 e 5 
+-- para que seja feita uma análise de Marketing especial.
+-- WITH clientes_para_marketing AS (
+--     SELECT 
+--     customers.company_name, 
+--     SUM(order_details.unit_price * order_details.quantity * (1.0 - order_details.discount)) AS total,
+--     NTILE(5) OVER (ORDER BY SUM(order_details.unit_price * order_details.quantity * (1.0 - order_details.discount)) DESC) AS group_number
+-- FROM 
+--     customers
+-- INNER JOIN 
+--     orders ON customers.customer_id = orders.customer_id
+-- INNER JOIN 
+--     order_details ON order_details.order_id = orders.order_id
+-- GROUP BY 
+--     customers.company_name
+-- ORDER BY 
+--     total DESC
+-- )
+
+-- SELECT *
+-- FROM clientes_para_marketing
+-- WHERE group_number >= 3;
+
+-- Top 10 produtos mais vendidos
+-- SELECT 
+--     products.product_name, 
+--     SUM(order_details.quantity) AS total_vendas,
+--     SUM(order_details.quantity * order_details.unit_price * (1.0 - order_details.discount)) AS total_receita,
+--     RANK() OVER (ORDER BY SUM(order_details.quantity) DESC) AS rank,
+--     RANK() OVER (ORDER BY SUM(order_details.quantity * order_details.unit_price * (1.0 - order_details.discount)) DESC) AS rank_receita
+-- FROM order_details
+-- INNER JOIN products ON order_details.product_id = products.product_id
+-- GROUP BY products.product_name
+-- ORDER BY total_vendas DESC
+
+
+-- Clientes do Reino Unido que pagaram mais de U$1000.00.
+-- SELECT 
+--     customers.company_name, 
+--     customers.contact_name, 
+--     SUM(order_details.unit_price * order_details.quantity * (1.0 - order_details.discount)) AS total,
+--     customers.country
+-- FROM customers
+-- INNER JOIN orders ON customers.customer_id = orders.customer_id
+-- INNER JOIN order_details ON order_details.order_id = orders.order_id
+-- WHERE customers.country = 'UK'
+-- GROUP BY customers.company_name, customers.contact_name, customers.country
+-- HAVING SUM(order_details.unit_price * order_details.quantity * (1.0 - order_details.discount)) > 1000
+-- ORDER BY total DESC
