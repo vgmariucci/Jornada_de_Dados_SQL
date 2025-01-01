@@ -1,15 +1,15 @@
--- 1. Total revenues for 1997
-SELECT 
-    SUM(od.quantity * od.unit_price * (1.0 - od.discount)) AS total_revenues_1997
-FROM 
-    orders o
-JOIN 
-    order_details od ON o.order_id = od.order_id
-WHERE 
-    EXTRACT(YEAR FROM o.order_date) = 1997;
+-- 1. Relatório de Receita/Faturamento total
+-- SELECT 
+--     SUM(od.quantity * od.unit_price * (1.0 - od.discount)) AS total_revenues_1997
+-- FROM 
+--     orders o
+-- JOIN 
+--     order_details od ON o.order_id = od.order_id
+-- WHERE 
+--     EXTRACT(YEAR FROM o.order_date) = 1997;
 
 
--- 2. Monthly growth and YTD values analysis
+-- 2. Análise de crescimento mensal e cálculo YTD
 -- WITH monthly_sales AS (
 --     SELECT 
 --         DATE_TRUNC('month', o.order_date) AS month,
@@ -40,3 +40,35 @@ WHERE
 -- ORDER BY 
 --     month;
 
+-- Segmentação de clientes:
+-- Qual o valor total que cada cliente pagou até agora?
+-- SELECT 
+--     customers.company_name, 
+--     SUM(order_details.unit_price * order_details.quantity * (1.0 - order_details.discount)) AS total
+-- FROM 
+--     customers
+-- INNER JOIN 
+--     orders ON customers.customer_id = orders.customer_id
+-- INNER JOIN 
+--     order_details ON order_details.order_id = orders.order_id
+-- GROUP BY 
+--     customers.company_name
+-- ORDER BY 
+--     total DESC;
+
+
+-- Separar os clientes em 5 grupos de acordo com o valor pago por cliente
+-- SELECT 
+-- customers.company_name, 
+-- SUM(order_details.unit_price * order_details.quantity * (1.0 - order_details.discount)) AS total,
+-- NTILE(5) OVER (ORDER BY SUM(order_details.unit_price * order_details.quantity * (1.0 - order_details.discount)) DESC) AS group_number
+-- FROM 
+--     customers
+-- INNER JOIN 
+--     orders ON customers.customer_id = orders.customer_id
+-- INNER JOIN 
+--     order_details ON order_details.order_id = orders.order_id
+-- GROUP BY 
+--     customers.company_name
+-- ORDER BY 
+--     total DESC;
